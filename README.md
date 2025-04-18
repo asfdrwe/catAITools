@@ -1,6 +1,9 @@
 # catAITools
 catAITools は Apple Silicon Mac 用の生成 AI 活用ツールです。
 
+詳しい使い方に関しては[Apple Silicon Mac 生成AI活用ガイド](https://asfdrwe.github.io/catAITools/)を参照してください。
+[PDF形式](https://asfdrwe.github.io/catAITools/pdf/document.pdf)もあります。
+
 ## ライセンス
 Copyright (c) 2025 asfdrwe
 

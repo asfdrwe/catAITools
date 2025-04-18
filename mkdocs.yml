@@ -1,6 +1,6 @@
 site_name: Apple Silicon Mac 生成AI活用ガイド
-site_url: ""
-repo_url: ""
+site_url: "https://asfdrwe.github.io/catAITools/"
+repo_url: "https://github.com/asfdrwe/catAITools/"
 site_description: Apple Silicon, mac, 生成AI, 入門, generative AI, for beginners
 site_author: asfdrwe
 copyright: 'Copyright (c) 2025 asfdrwe, CC BY 4.0'
