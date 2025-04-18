@@ -1,5 +1,3 @@
-### 文章に基づく画像生成
-
 LaunchPad から ComfyUI Desktop を起動してください。
 
 ![imaget2i1](img/3201.png)
