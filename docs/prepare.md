@@ -1,6 +1,6 @@
 ## catAIToolsのダウンロード
 Apple Silicon Mac 向けのユーティリティを作成しました。
-最初に[こちら](https://github.com/asfdrwe/catAITools/raw/refs/heads/main/dist/catAITools20250417.zip)からダウンロードしてください。
+最初に[こちら](https://github.com/asfdrwe/catAITools/raw/refs/heads/main/dist/catAITools20250418.zip)からダウンロードしてください。
 ダウンロードした zip ファイルは自動的に展開されてダウンロードフォルダに
 catAITools フォルダができているはずです。
 
