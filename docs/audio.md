@@ -17,7 +17,7 @@ catAITools の ComfyUI用ツールの中に『AudioModel.download.command』を�
 『stable-audio-open-1.0.safetensors』と
 その追加学習版『stable-audio-open-1.0-Music.safetensors』の２つのモデルをダウンロードします。
 
-ダウンロード完了したらダイアログが表示されるので OK を押してターミナルを閉じてください。
+ダウンロード完了したらダイアログが表示されるので OK を押し、さらにターミナルも閉じてください。
 
 ## 音楽生成
 『2.1.1.音楽生成.json』を開いてください。
