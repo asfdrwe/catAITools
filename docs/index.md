@@ -2,7 +2,7 @@
 この文書は生成 AI 初心者向けに Apple Silicon Mac で画像生成 AI・音楽生成 AI・動画生成 AI・音声生成 AIと大規模言語モデルと視覚言語モデルによる言語 AI の
 活用について解説します。
 
-こちらで作成した catAITools というツールを活用することで、
+こちらで作成した[catAITools](https://github.com/asfdrwe/catAITools/) を活用することで、
 コマンドに不慣れな方でも問題ないように GUI でのインストールや操作を可能としています。
 また、高速化 LoRA を活用するなど M4 Mac mini で実用性のある速度で生成可能と
 なるよう調整してあります。
