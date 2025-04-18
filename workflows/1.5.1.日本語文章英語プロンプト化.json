@@ -43,9 +43,10 @@
         }
       ],
       "properties": {
-        "cnr_id": "danbot-comfy-node",
+        "aux_id": "p1atdev/danbot-comfy-node",
         "ver": "175f9ba48453af5922f5a513e100ca18e7a92c0d",
-        "Node name for S&R": "DanbotV2408TemplateConfigNode"
+        "Node name for S&R": "DanbotV2408TemplateConfigNode",
+        "cnr_id": "danbot-comfy-node"
       },
       "widgets_values": [
         "tall",
@@ -95,9 +96,10 @@
         }
       ],
       "properties": {
-        "cnr_id": "danbot-comfy-node",
+        "aux_id": "p1atdev/danbot-comfy-node",
         "ver": "175f9ba48453af5922f5a513e100ca18e7a92c0d",
-        "Node name for S&R": "DanbotV2408TemplateConfigNode"
+        "Node name for S&R": "DanbotV2408TemplateConfigNode",
+        "cnr_id": "danbot-comfy-node"
       },
       "widgets_values": [
         "tall",
@@ -135,109 +137,16 @@
         }
       ],
       "properties": {
-        "cnr_id": "danbot-comfy-node",
+        "aux_id": "p1atdev/danbot-comfy-node",
         "ver": "175f9ba48453af5922f5a513e100ca18e7a92c0d",
-        "Node name for S&R": "DanbotLoadModel"
+        "Node name for S&R": "DanbotLoadModel",
+        "cnr_id": "danbot-comfy-node"
       },
       "widgets_values": [
         "DanbotNL 2408 260M"
       ],
       "color": "#232",
       "bgcolor": "#353"
-    },
-    {
-      "id": 8,
-      "type": "DanbotV2408PipelineNode",
-      "pos": [
-        2348.50830078125,
-        2354.543701171875
-      ],
-      "size": [
-        544.199951171875,
-        190
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 7,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "danbot_model",
-          "type": "DANBOT_MODEL",
-          "link": 1
-        },
-        {
-          "name": "translation_template_config",
-          "shape": 7,
-          "type": "DANBOT_TEMPLATE_CONFIG",
-          "link": 6
-        },
-        {
-          "name": "extension_template_config",
-          "shape": 7,
-          "type": "DANBOT_TEMPLATE_CONFIG",
-          "link": 7
-        },
-        {
-          "name": "generation_config",
-          "shape": 7,
-          "type": "DANBOT_GENERATION_CONFIG",
-          "link": 3
-        },
-        {
-          "name": "text_prompt",
-          "type": "STRING",
-          "widget": {
-            "name": "text_prompt"
-          },
-          "link": 2
-        },
-        {
-          "name": "ban_tags",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "ban_tags"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "generated_tags",
-          "type": "STRING",
-          "links": [
-            8
-          ]
-        },
-        {
-          "name": "translated_tags",
-          "type": "STRING",
-          "links": null
-        },
-        {
-          "name": "extended_tags",
-          "type": "STRING",
-          "links": null
-        },
-        {
-          "name": "raw_output",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "danbot-comfy-node",
-        "ver": "175f9ba48453af5922f5a513e100ca18e7a92c0d",
-        "Node name for S&R": "DanbotV2408PipelineNode"
-      },
-      "widgets_values": [
-        "",
-        3769802234,
-        "randomize",
-        ""
-      ]
     },
     {
       "id": 2,
@@ -275,9 +184,10 @@
         }
       ],
       "properties": {
-        "cnr_id": "danbot-comfy-node",
+        "aux_id": "p1atdev/danbot-comfy-node",
         "ver": "175f9ba48453af5922f5a513e100ca18e7a92c0d",
-        "Node name for S&R": "DanbotV2408AutoAspectRatioTag"
+        "Node name for S&R": "DanbotV2408AutoAspectRatioTag",
+        "cnr_id": "danbot-comfy-node"
       },
       "widgets_values": [
         896,
@@ -312,9 +222,10 @@
       ],
       "title": "日本語で生成したい画像の内容を文章で書く。",
       "properties": {
-        "cnr_id": "danbot-comfy-node",
+        "aux_id": "p1atdev/danbot-comfy-node",
         "ver": "175f9ba48453af5922f5a513e100ca18e7a92c0d",
-        "Node name for S&R": "DanbotUtilsTextInput"
+        "Node name for S&R": "DanbotUtilsTextInput",
+        "cnr_id": "danbot-comfy-node"
       },
       "widgets_values": [
         "猫耳で黒髪ロング、制服を着ており、目は黄色の少女。背景はハーフトーンのついた青で、白枠が付いている。ソファーに座って足を組みながらこっちを見ている。"
@@ -341,9 +252,6 @@
           "name": "input_string",
           "shape": 7,
           "type": "STRING",
-          "widget": {
-            "name": "input_string"
-          },
           "link": 8
         }
       ],
@@ -356,13 +264,14 @@
       ],
       "title": "翻訳された英語プロンプト",
       "properties": {
-        "cnr_id": "danbot-comfy-node",
+        "aux_id": "p1atdev/danbot-comfy-node",
         "ver": "175f9ba48453af5922f5a513e100ca18e7a92c0d",
-        "Node name for S&R": "DanbotUtilsPrintString"
+        "Node name for S&R": "DanbotUtilsPrintString",
+        "cnr_id": "danbot-comfy-node"
       },
       "widgets_values": [
-        "",
-        "1girl, solo, blue background, halftone background, looking at viewer, animal ears, school uniform, yellow eyes, black hair, long hair, sitting, crossed legs, cat ears, border, halftone, white border, couch, blue theme, gradient background, shirt, skirt, bow, short sleeves, white shirt, pleated skirt, head tilt, bowtie, cat girl"
+        "1girl, solo, blue background, halftone background, looking at viewer, animal ears, school uniform, yellow eyes, black hair, long hair, sitting, crossed legs, cat ears, border, halftone, white border, couch, blue theme, gradient background, shirt, skirt, bow, short sleeves, white shirt, pleated skirt, head tilt, bowtie, cat girl",
+        "1girl, solo, blue background, halftone background, looking at viewer, animal ears, school uniform, yellow eyes, black hair, long hair, sitting, crossed legs, cat ears, border, halftone, white border, couch, shirt, skirt, pantyhose, ahoge, short sleeves, shoes, white shirt, full body, loafers, pleated skirt, black footwear, collared shirt, tail, cat tail, outside border, black pantyhose, sweater vest, on couch"
       ]
     },
     {
@@ -390,9 +299,10 @@
         }
       ],
       "properties": {
-        "cnr_id": "danbot-comfy-node",
+        "aux_id": "p1atdev/danbot-comfy-node",
         "ver": "175f9ba48453af5922f5a513e100ca18e7a92c0d",
-        "Node name for S&R": "DanbotGenerationConfig"
+        "Node name for S&R": "DanbotGenerationConfig",
+        "cnr_id": "danbot-comfy-node"
       },
       "widgets_values": [
         256,
@@ -426,6 +336,93 @@
       ],
       "color": "#432",
       "bgcolor": "#653"
+    },
+    {
+      "id": 8,
+      "type": "DanbotV2408PipelineNode",
+      "pos": [
+        2348.50830078125,
+        2354.543701171875
+      ],
+      "size": [
+        544.199951171875,
+        190
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "danbot_model",
+          "type": "DANBOT_MODEL",
+          "link": 1
+        },
+        {
+          "name": "text_prompt",
+          "type": "STRING",
+          "link": 2
+        },
+        {
+          "name": "ban_tags",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "translation_template_config",
+          "shape": 7,
+          "type": "DANBOT_TEMPLATE_CONFIG",
+          "link": 6
+        },
+        {
+          "name": "extension_template_config",
+          "shape": 7,
+          "type": "DANBOT_TEMPLATE_CONFIG",
+          "link": 7
+        },
+        {
+          "name": "generation_config",
+          "shape": 7,
+          "type": "DANBOT_GENERATION_CONFIG",
+          "link": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "generated_tags",
+          "type": "STRING",
+          "links": [
+            8
+          ]
+        },
+        {
+          "name": "translated_tags",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "extended_tags",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "raw_output",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "p1atdev/danbot-comfy-node",
+        "ver": "175f9ba48453af5922f5a513e100ca18e7a92c0d",
+        "Node name for S&R": "DanbotV2408PipelineNode",
+        "cnr_id": "danbot-comfy-node"
+      },
+      "widgets_values": [
+        3582496879,
+        "randomize"
+      ]
     }
   ],
   "links": [
@@ -442,7 +439,7 @@
       5,
       0,
       8,
-      4,
+      1,
       "STRING"
     ],
     [
@@ -450,7 +447,7 @@
       3,
       0,
       8,
-      3,
+      5,
       "DANBOT_GENERATION_CONFIG"
     ],
     [
@@ -474,7 +471,7 @@
       6,
       0,
       8,
-      1,
+      3,
       "DANBOT_TEMPLATE_CONFIG"
     ],
     [
@@ -482,7 +479,7 @@
       14,
       0,
       8,
-      2,
+      4,
       "DANBOT_TEMPLATE_CONFIG"
     ],
     [
@@ -500,14 +497,15 @@
     "ds": {
       "scale": 0.7403550102850676,
       "offset": [
-        -709.165995279948,
+        -709.1659952799481,
         -2060.8633022089116
       ]
     },
     "VHS_latentpreview": false,
     "VHS_latentpreviewrate": 0,
     "VHS_MetadataImage": true,
-    "VHS_KeepIntermediate": true
+    "VHS_KeepIntermediate": true,
+    "frontendVersion": "1.16.8"
   },
   "version": 0.4
 }
