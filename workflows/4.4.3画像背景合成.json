@@ -1,0 +1,364 @@
+{
+  "id": "3656f872-d0a3-443d-ac6b-97d5dde79187",
+  "revision": 0,
+  "last_node_id": 18,
+  "last_link_id": 20,
+  "nodes": [
+    {
+      "id": 12,
+      "type": "MarkdownNote",
+      "pos": [
+        -900.2915649414062,
+        -473.7463684082031
+      ],
+      "size": [
+        328,
+        512.0001220703125
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "# モデル\n自動でダウンロードされるはずです。\n\n# カスタムノード\n- [ComfyUI_LayerStyle](https://github.com/chflame163/ComfyUI_LayerStyle)\n- [ComfyUI-RMBG](https://github.com/1038lab/ComfyUI-RMBG)\n\n# 注意\nComfyUI-RMBGはrequirements.txtに問題があってM4 Mac miniではそのままではComfyUI-Managerから\nインストールできないので、ComfyUI.RMGB.install.commandをComfyUIフォルダに移動し\nダブルクリックしてインストールしてください。"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 16,
+      "type": "SaveImage",
+      "pos": [
+        804.5425415039062,
+        -475.7191467285156
+      ],
+      "size": [
+        315,
+        270
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 20
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27"
+      },
+      "widgets_values": [
+        "ComfyUI",
+        ""
+      ]
+    },
+    {
+      "id": 11,
+      "type": "RMBG",
+      "pos": [
+        -191.29156494140625,
+        -459.74639892578125
+      ],
+      "size": [
+        315,
+        290
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 10
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            17
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            18
+          ]
+        },
+        {
+          "name": "MASK_IMAGE",
+          "type": "IMAGE",
+          "links": [
+            11
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-rmbg",
+        "ver": "e96e69d218b3ab1ef4a04314ad6518f9360819c8",
+        "Node name for S&R": "RMBG"
+      },
+      "widgets_values": [
+        "BEN",
+        1,
+        1024,
+        0,
+        0,
+        "Alpha",
+        false,
+        "default",
+        false
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 17,
+      "type": "LoadImage",
+      "pos": [
+        -546.6759033203125,
+        -77.92327117919922
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            19
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "背景画像を読み込む",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ComfyUI_00006_.png",
+        "image",
+        ""
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 18,
+      "type": "AILab_ImageCombiner",
+      "pos": [
+        268.2427978515625,
+        -470.8874816894531
+      ],
+      "size": [
+        315,
+        194
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "foreground",
+          "type": "IMAGE",
+          "link": 17
+        },
+        {
+          "name": "background",
+          "type": "IMAGE",
+          "link": 19
+        },
+        {
+          "name": "foreground_mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": 18
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            20
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-rmbg",
+        "ver": "e96e69d218b3ab1ef4a04314ad6518f9360819c8",
+        "Node name for S&R": "AILab_ImageCombiner"
+      },
+      "widgets_values": [
+        "normal",
+        1,
+        1,
+        50,
+        50
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 10,
+      "type": "LoadImage",
+      "pos": [
+        -552.2915649414062,
+        -462.7463684082031
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            10
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "前景画像を読み込む",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ComfyUI_00002_.png",
+        "image",
+        ""
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 13,
+      "type": "PreviewImage",
+      "pos": [
+        -150.2915496826172,
+        -34.43107986450195
+      ],
+      "size": [
+        210,
+        246
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 11
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": [
+        ""
+      ]
+    }
+  ],
+  "links": [
+    [
+      10,
+      10,
+      0,
+      11,
+      0,
+      "IMAGE"
+    ],
+    [
+      11,
+      11,
+      2,
+      13,
+      0,
+      "IMAGE"
+    ],
+    [
+      17,
+      11,
+      0,
+      18,
+      0,
+      "IMAGE"
+    ],
+    [
+      18,
+      11,
+      1,
+      18,
+      2,
+      "MASK"
+    ],
+    [
+      19,
+      17,
+      0,
+      18,
+      1,
+      "IMAGE"
+    ],
+    [
+      20,
+      18,
+      0,
+      16,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6209213230591555,
+      "offset": [
+        1522.6445848027615,
+        825.1998778550701
+      ]
+    },
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}

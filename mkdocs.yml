@@ -1,0 +1,32 @@
+site_name: Apple Silicon Mac 生成AI活用ガイド
+site_url: ""
+repo_url: ""
+site_description: Apple Silicon, mac, 生成AI, 入門, generative AI, for beginners
+site_author: asfdrwe
+copyright: 'Copyright (c) 2025 asfdrwe, CC BY 4.0'
+
+nav:
+  - 'はじめに': index.md
+  - '事前準備': prepare.md
+  - '画像生成':
+    - 'インストールとモデルのダウンロード': image-install.md
+    - '文章に基づく画像作成': image-t2i.md
+    - '画像と文章に基づく画像作成': image-i2i.md
+    - 'コントロールネットによる生成画像の制御': image-control.md
+    - 'AIによる画像加工': image-edit.md
+    - 'その他': image-extra.md
+  - '音楽生成': audio.md
+  - '動画生成': video.md
+  - '音声生成': voice.md
+  - '言語AI': language.md
+  - 'あとがき': epilogue.md
+
+plugins: 
+  - mkdocs-video
+  - mkdocs-audio
+#  - with-pdf
+
+theme: 
+  name: material
+  locale: ja
+  logo: assets/logo.png
