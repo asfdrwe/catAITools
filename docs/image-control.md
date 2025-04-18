@@ -176,7 +176,9 @@ ComfyUI 3D Pose Editor をインストールして、Restart を押して
 次のプロンプトで生成してみてください。
 
 ```
-1girl, solo, black hair, brown hair, long hair, school uniform, blazer, blue jacket, red bowtie, classroom, smile, open mouth, profile, lookin to the side, official art, anime coloring
+1girl, solo, black hair, brown hair, long hair, school uniform, blazer, 
+blue jacket, red bowtie, classroom, smile, open mouth, profile, 
+looking to the side, official art, anime coloring
 ```
 
 ![gen0011](generated/0011.png)
