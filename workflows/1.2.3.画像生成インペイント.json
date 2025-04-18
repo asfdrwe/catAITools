@@ -207,8 +207,7 @@
         "ver": "0.3.27"
       },
       "widgets_values": [
-        "ComfyUI",
-        ""
+        "ComfyUI"
       ]
     },
     {
@@ -353,92 +352,6 @@
       ]
     },
     {
-      "id": 5,
-      "type": "CLIPTextEncode",
-      "pos": [
-        445.2405090332031,
-        97.47686004638672
-      ],
-      "size": [
-        400,
-        200
-      ],
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 7
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            10
-          ]
-        }
-      ],
-      "title": "ポジティブプロンプト",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.27",
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "1girl, classroom, looking at viewer, standing, school uniform, official art, anime cloring"
-      ],
-      "color": "#332922",
-      "bgcolor": "#593930"
-    },
-    {
-      "id": 16,
-      "type": "LoadImage",
-      "pos": [
-        455.812744140625,
-        649.5850219726562
-      ],
-      "size": [
-        315,
-        314
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            25
-          ]
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": [
-            26
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.27",
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "clipspace/clipspace-mask-6633296.png [input]",
-        "image",
-        ""
-      ],
-      "color": "#332922",
-      "bgcolor": "#593930"
-    },
-    {
       "id": 8,
       "type": "KSampler",
       "pos": [
@@ -489,7 +402,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        362102397587741,
+        295020790938415,
         "randomize",
         8,
         2,
@@ -499,6 +412,92 @@
       ],
       "color": "#232",
       "bgcolor": "#353"
+    },
+    {
+      "id": 5,
+      "type": "CLIPTextEncode",
+      "pos": [
+        445.2405090332031,
+        97.47686004638672
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            10
+          ]
+        }
+      ],
+      "title": "ポジティブプロンプト",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "1girl, solo, blonde hair, blue eyes, two-side up, school uniform, blazer, blue jacket, red bowtie, pleated skirt, blue skirt, classroom, looking at viewer, standing, angry, teeth, official art, anime coloring"
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 16,
+      "type": "LoadImage",
+      "pos": [
+        455.812744140625,
+        649.5850219726562
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            25
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            26
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ComfyUI_00001_.png",
+        "image",
+        ""
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
     }
   ],
   "links": [
@@ -635,10 +634,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1,
+      "scale": 0.9090909090909091,
       "offset": [
-        -88.81275646938292,
-        -128.58500285769122
+        355.0289886672932,
+        20.69977007502658
       ]
     },
     "VHS_latentpreview": false,

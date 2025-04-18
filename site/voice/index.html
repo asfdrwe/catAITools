@@ -1,0 +1,846 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Apple Silicon, mac, 生成AI, 入門, generative AI, for beginners">
+      
+      
+        <meta name="author" content="asfdrwe">
+      
+      
+        <link rel="canonical" href="https://asfdrwe.github.io/catAITools/voice/">
+      
+      
+        <link rel="prev" href="../video/">
+      
+      
+        <link rel="next" href="../language/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>音声生成 - Apple Silicon Mac 生成AI活用ガイド</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ai" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Apple Silicon Mac 生成AI活用ガイド" class="md-header__button md-logo" aria-label="Apple Silicon Mac 生成AI活用ガイド" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Apple Silicon Mac 生成AI活用ガイド
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              音声生成
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/asfdrwe/catAITools/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Apple Silicon Mac 生成AI活用ガイド" class="md-nav__button md-logo" aria-label="Apple Silicon Mac 生成AI活用ガイド" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Apple Silicon Mac 生成AI活用ガイド
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/asfdrwe/catAITools/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    はじめに
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prepare/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    事前準備
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    画像生成
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            画像生成
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../image-install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    インストールとモデルのダウンロード
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../image-t2i/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    文章に基づく画像作成
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../image-i2i/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    画像と文章に基づく画像作成
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../image-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    コントロールネットによる生成画像の制御
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../image-edit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AIによる画像加工
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../image-extra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    その他
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    音楽生成
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    動画生成
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    音声生成
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    音声生成
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      音声生成AI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#style-bert-vits2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Style Bert VITS2 のインストールと起動
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Style Bert VITS2 のインストールと起動">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      注意事項
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      文章を読み上げる音声生成
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      他のモデル
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      学習について
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../language/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    言語AI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../epilogue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    あとがき
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      音声生成AI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#style-bert-vits2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Style Bert VITS2 のインストールと起動
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Style Bert VITS2 のインストールと起動">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      注意事項
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      文章を読み上げる音声生成
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      他のモデル
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      学習について
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>音声生成</h1>
+
+<div><h2 id="ai">音声生成AI</h2>
+<p><a href="https://github.com/litagin02/Style-Bert-VITS2">Style Bert VITS2</a> を使用して音声生成 AI による文章からの音声合成を行います。</p>
+<h2 id="style-bert-vits2">Style Bert VITS2 のインストールと起動</h2>
+<p>catAITools フォルダにある Style-Bert-VITS2 フォルダを開き、
+『StyleBertVits2.command』をダブルクリックしてください。</p>
+<p><img alt="sbv1" src="../img/6001.png"></p>
+<p>はいを押してください。Style-Bert-VITS2 フォルダの Style-Bert-VITS2 フォルダ
+以下にプログラムをダウンロードし、続けてモデルをダウンロードします。</p>
+<p><img alt="sbv2" src="../img/6002.png">
+<img alt="sbv3" src="../img/6003.png"></p>
+<p>完了するとダイアログが出るので OK を押してください。</p>
+<p><img alt="sbv4" src="../img/6004.png">
+<img alt="sbv41" src="../img/60041.png"></p>
+<p>Styel-Bert-VITS2 が起動しますが、初回起動時はなにかおかしいようなので、
+一旦終了してください。</p>
+<h3 id="_1">注意事項</h3>
+<p>数 GB ダウンロードするので、通信データ量とストレージ容量に気をつけてください。</p>
+<p>ストレージが少ない場合、『StyleBertVits2.command』を実行する前に
+Style-Bert-VITS2 フォルダごと外付け SSD 等に移動させてから、
+『StyleBertVits2.command』を実行してください。</p>
+<p>あとから移動させると動かなくなるはずです。</p>
+<h2 id="_2">文章を読み上げる音声生成</h2>
+<p>もう一度 StyleBertVits2.command を起動してください。</p>
+<p><img alt="sbv5" src="../img/6005.png"></p>
+<p>自動的に Safari が起動し、お願いとモデルの利用規約が表示されるので、よく読んで同意するを押してください。</p>
+<p><img alt="sbv6" src="../img/6006.png"></p>
+<p>テキスト1 に文章を入力して音声合成を押せば音声が生成されます。
+次の文を入力して音声合成してください。</p>
+<pre><code>この文書は生成 AI 初心者向けに Apple Silicon Mac で画像生成 AI・音楽生成 AI・動画生成 AI・音声生成 AIと大規模言語モデルと視覚言語モデルによる言語 AI の活用について解説します。
+</code></pre>
+<p><img alt="sbv7" src="../img/6007.png"></p>
+<p>左下から合成された音声を再生できます。</p>
+<p><div class="audio-container"><audio controls="controls" style="width:100%" alt="type:audio"><source src="../generated/audio1.wav" type="audio/mp3"></source></audio></div></p>
+<p>ただ、バグか仕様か分かりませんが、Safari では右クリックしても
+生成した音声のダウンロードができないようなので、
+代わりに Google Chrome や Firefox をインストールし起動して
+<a href="http://localhost:8080/">こちら</a>を開いて Chrome や Firefox で音声合成してください。</p>
+<p><img alt="sbv8" src="../img/6008.png"></p>
+<p>Chrome や Firefox なら生成した音声を保存できます。</p>
+<p><img alt="sbv9" src="../img/6009.png"></p>
+<p>右のメニューからモデルを変更できます。</p>
+<ul>
+<li>jvnv-M1-jp 日本人男性</li>
+<li>jvnv-M2-jp 日本人男性その2</li>
+<li>jvnv-F1-jp 日本人女性</li>
+<li>jvnv-F2-jp 日本人女性その2</li>
+<li>koharune-ami 日本人女性、使用条件を読んで音声合成してください。</li>
+<li>amitaro 日本人女性、使用条件を読んで音声合成してください。</li>
+</ul>
+<p>スタイルで読み上げ時の感情を制御できます。
+スタイルの強さで感情の強さを制御できます。</p>
+<p>モデルを jvnv-F1-jp にしてスタイルを Happy にしてスタイルの強さを 10 にして
+もう一度音声合成してください。
+今度は女性が幸せそうに音声を読み上げてくれるはずです。</p>
+<p><div class="audio-container"><audio controls="controls" style="width:100%" alt="type:audio"><source src="../generated/audio2.wav" type="audio/mp3"></source></audio></div></p>
+<p>そのほか話速やテンポの緩急なども制御できるので試してみてください。</p>
+<h2 id="_3">他のモデル</h2>
+<p>モデルは booth などで配布や販売されています。</p>
+<ul>
+<li><a href="https://booth.pm/ja/search/style%20bert%20vits">booth</a></li>
+</ul>
+<p>他にもモデルは配布されているようなので、『Style Bert Vits2 Model』等で
+検索してみてください。</p>
+<h2 id="_4">学習について</h2>
+<p>Style Bert VITS2 には<a href="https://github.com/litagin02/Style-Bert-VITS2/blob/master/docs/CLI.md">自分の声などを学習してモデルを作成する機能</a>が
+あります。<code>python app.py</code>で動くはずなのですが、
+このスクリプトで使用している macOS Sequoia の Xcode 
+Command Line Tools 付属のpython3.9 ではうまく動かないと思います。</p>
+<p>brew 等で python3.10 を入れて動かせば動くと思いますが、この文書では説明しません。</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright (c) 2025 asfdrwe, CC BY 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>

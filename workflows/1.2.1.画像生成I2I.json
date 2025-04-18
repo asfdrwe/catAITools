@@ -207,7 +207,8 @@
         "ver": "0.3.27"
       },
       "widgets_values": [
-        "ComfyUI"
+        "ComfyUI",
+        ""
       ]
     },
     {
@@ -295,48 +296,6 @@
       "widgets_values": []
     },
     {
-      "id": 5,
-      "type": "CLIPTextEncode",
-      "pos": [
-        445.2405090332031,
-        97.47686004638672
-      ],
-      "size": [
-        400,
-        200
-      ],
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 7
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            10
-          ]
-        }
-      ],
-      "title": "ポジティブプロンプト",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.27",
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "1girl, classroom, looking at viewer, standing, blonde hair, blue eyes, long hair, school uniform, official art, anime cloring"
-      ],
-      "color": "#332922",
-      "bgcolor": "#593930"
-    },
-    {
       "id": 1,
       "type": "CheckpointLoaderSimple",
       "pos": [
@@ -385,6 +344,48 @@
       ],
       "color": "#232",
       "bgcolor": "#353"
+    },
+    {
+      "id": 17,
+      "type": "LoadImage",
+      "pos": [
+        461.43231201171875,
+        635.6671752929688
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            27
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ComfyUI_00001_.png",
+        "image",
+        ""
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
     },
     {
       "id": 8,
@@ -437,55 +438,55 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        434523661776671,
+        910214561011090,
         "randomize",
         8,
         2,
         "lcm",
         "simple",
-        0.7000000000000002
+        0.9000000000000001
       ],
       "color": "#232",
       "bgcolor": "#353"
     },
     {
-      "id": 17,
-      "type": "LoadImage",
+      "id": 5,
+      "type": "CLIPTextEncode",
       "pos": [
-        461.43231201171875,
-        635.6671752929688
+        445.2405090332031,
+        97.47686004638672
       ],
       "size": [
-        315,
-        314
+        400,
+        200
       ],
       "flags": {},
-      "order": 2,
+      "order": 6,
       "mode": 0,
-      "inputs": [],
-      "outputs": [
+      "inputs": [
         {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            27
-          ]
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
+          "name": "clip",
+          "type": "CLIP",
+          "link": 7
         }
       ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            10
+          ]
+        }
+      ],
+      "title": "ポジティブプロンプト",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.3.27",
-        "Node name for S&R": "LoadImage"
+        "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "ComfyUI_00003_.png",
-        "image",
-        ""
+        "1girl, solo, pink hair, red eyes, long hair, school uniform, blazer, grey jacket, green bowtie, pleated skirt, grey skirt, classroom, looking at viewer, standing, smile, open mouth, official art, anime coloring"
       ],
       "color": "#332922",
       "bgcolor": "#593930"
@@ -617,10 +618,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1,
+      "scale": 0.9090909090909091,
       "offset": [
-        -47.43233784342624,
-        -126.66717811942038
+        355.0289886672932,
+        20.69977007502658
       ]
     },
     "VHS_latentpreview": false,

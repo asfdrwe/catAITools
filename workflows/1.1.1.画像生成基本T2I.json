@@ -1,8 +1,8 @@
 {
   "id": "32fd16ef-0c85-4856-85c3-5d30c120cc34",
   "revision": 0,
-  "last_node_id": 13,
-  "last_link_id": 18,
+  "last_node_id": 14,
+  "last_link_id": 19,
   "nodes": [
     {
       "id": 3,
@@ -70,7 +70,7 @@
         126
       ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -127,7 +127,7 @@
         46
       ],
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -158,36 +158,6 @@
       "widgets_values": []
     },
     {
-      "id": 10,
-      "type": "SaveImage",
-      "pos": [
-        1250.1529541015625,
-        201.6580810546875
-      ],
-      "size": [
-        315,
-        270
-      ],
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 15
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.27"
-      },
-      "widgets_values": [
-        "ComfyUI"
-      ]
-    },
-    {
       "id": 6,
       "type": "CLIPTextEncode",
       "pos": [
@@ -199,7 +169,7 @@
         200
       ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -230,57 +200,15 @@
       "bgcolor": "#593930"
     },
     {
-      "id": 13,
-      "type": "VAEEncode",
+      "id": 1,
+      "type": "CheckpointLoaderSimple",
       "pos": [
-        907.1394653320312,
-        436.6431579589844
+        87.0804443359375,
+        101.10685729980469
       ],
       "size": [
-        210,
-        46
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "pixels",
-          "type": "IMAGE",
-          "link": 16
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 18
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            17
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.27",
-        "Node name for S&R": "VAEEncode"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 12,
-      "type": "LoadImage",
-      "pos": [
-        459.4393005371094,
-        646.7428588867188
-      ],
-      "size": [
-        387.6000061035156,
-        314
+        315,
+        98
       ],
       "flags": {},
       "order": 0,
@@ -288,30 +216,128 @@
       "inputs": [],
       "outputs": [
         {
-          "name": "IMAGE",
-          "type": "IMAGE",
+          "name": "MODEL",
+          "type": "MODEL",
           "links": [
-            16
+            2
           ]
         },
         {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            3
+          ]
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            14
+          ]
         }
       ],
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.3.27",
-        "Node name for S&R": "LoadImage"
+        "Node name for S&R": "CheckpointLoaderSimple"
       },
       "widgets_values": [
-        "ComfyUI_00002_.png",
-        "image",
-        ""
+        "Illustrious-XL-v1.1.safetensors"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 7,
+      "type": "MarkdownNote",
+      "pos": [
+        -210.5795135498047,
+        96.26685333251953
+      ],
+      "size": [
+        280.0299987792969,
+        564.5700073242188
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "# 推奨モデル\nダウンロードしたモデルはComfyUIフォルダのmodelsのcheckpointsに移動し、『チェックポイントを読み込む』ノードで設定。\n\n## アニメ調\nサイトにアクセスしてモデルの使用上の注意を読んでください。\n- [Illustrious-XL-v1.1](https://huggingface.co/OnomaAIResearch/Illustrious-XL-v1.1)\n- [Illustrious-XL-v1.1.safetensors\n](https://huggingface.co/OnomaAIResearch/Illustrious-XL-v1.1/blob/main/Illustrious-XL-v1.1.safetensors)をダウンロード\n\n## リアル調\n- [fuduki_mix](https://huggingface.co/Kotajiro/fuduki_mix \n)\n- [fuduki_mix_v20.safetensors](https://huggingface.co/Kotajiro/fuduki_mix/blob/main/fuduki_mix_v20.safetensors)をダウンロード\n\n# 高速化LoRA\nダウンロードしたモデルはComfyUIフォルダのmodelsのlorasに移動し、『高速化LoRAを読み込む』ノードで設定。\n\n- [DMD2](https://huggingface.co/tianweiy/DMD2)\n- [dmd2_sdxl_4step_lora_fp16.safetensors](https://huggingface.co/tianweiy/DMD2/blob/main/dmd2_sdxl_4step_lora_fp16.safetensors) をダウンロード\n\n## その他\n- [civitai](https://civitai.com/)\nモデルやLoRAはこちらから探せます"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 14,
+      "type": "EmptyLatentImage",
+      "pos": [
+        456.7198791503906,
+        651.1854248046875
+      ],
+      "size": [
+        390.60137939453125,
+        117.36738586425781
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            19
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        896,
+        1152,
+        1
       ],
       "color": "#332922",
       "bgcolor": "#593930"
+    },
+    {
+      "id": 10,
+      "type": "SaveImage",
+      "pos": [
+        1250.1529541015625,
+        201.6580810546875
+      ],
+      "size": [
+        315,
+        270
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 15
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27"
+      },
+      "widgets_values": [
+        "ComfyUI",
+        ""
+      ]
     },
     {
       "id": 5,
@@ -325,7 +351,7 @@
         200
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -350,60 +376,10 @@
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "1girl, classroom, looking at viewer, standing, blonde hair, blue eyes, long hair, school uniform"
+        "1girl, solo, blonde hair, blue eyes, two-side up, school uniform, blazer, blue jacket, red bowtie, pleated skirt, blue skirt, classroom, looking at viewer, standing, smile, open mouth, official art, anime coloring"
       ],
       "color": "#332922",
       "bgcolor": "#593930"
-    },
-    {
-      "id": 1,
-      "type": "CheckpointLoaderSimple",
-      "pos": [
-        87.0804443359375,
-        101.10685729980469
-      ],
-      "size": [
-        315,
-        98
-      ],
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            2
-          ]
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            3
-          ]
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            14,
-            18
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.27",
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "Illustrious-XL-v1.1.safetensors"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
     },
     {
       "id": 8,
@@ -417,7 +393,7 @@
         262
       ],
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -438,7 +414,7 @@
         {
           "name": "latent_image",
           "type": "LATENT",
-          "link": 17
+          "link": 19
         }
       ],
       "outputs": [
@@ -456,39 +432,16 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        415725779352119,
+        397111482560178,
         "randomize",
         8,
         2,
         "lcm",
         "simple",
-        0.7000000000000002
+        1
       ],
       "color": "#232",
       "bgcolor": "#353"
-    },
-    {
-      "id": 7,
-      "type": "MarkdownNote",
-      "pos": [
-        -210.5795135498047,
-        96.26685333251953
-      ],
-      "size": [
-        280.0299987792969,
-        564.5700073242188
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {},
-      "widgets_values": [
-        "# 推奨モデル\nダウンロードしたモデルはComfyUIフォルダのmodelsのcheckpointsに移動し、『チェックポイントを読み込む』ノードで設定。\n\n## アニメ調\nサイトにアクセスしてモデルの使用上の注意を読んでください。\n- [Illustrious-XL-v1.1](https://huggingface.co/OnomaAIResearch/Illustrious-XL-v1.1)\n- [Illustrious-XL-v1.1.safetensors\n](https://huggingface.co/OnomaAIResearch/Illustrious-XL-v1.1/blob/main/Illustrious-XL-v1.1.safetensors)をダウンロード\n\n## リアル調\n- [fuduki_mix](https://huggingface.co/Kotajiro/fuduki_mix \n)\n- [fuduki_mix_v20.safetensors](https://huggingface.co/Kotajiro/fuduki_mix/blob/main/fuduki_mix_v20.safetensors)をダウンロード\n\n# 高速化LoRA\nダウンロードしたモデルはComfyUIフォルダのmodelsのlorasに移動し、『高速化LoRAを読み込む』ノードで設定。\n\n- [DMD2](https://huggingface.co/tianweiy/DMD2)\n- [dmd2_sdxl_4step_lora_fp16.safetensors](https://huggingface.co/tianweiy/DMD2/blob/main/dmd2_sdxl_4step_lora_fp16.safetensors) をダウンロード\n\n## その他\n- [civitai](https://civitai.com/)\nモデルやLoRAはこちらから探せます"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -589,28 +542,12 @@
       "IMAGE"
     ],
     [
-      16,
-      12,
-      0,
-      13,
-      0,
-      "IMAGE"
-    ],
-    [
-      17,
-      13,
+      19,
+      14,
       0,
       8,
       3,
       "LATENT"
-    ],
-    [
-      18,
-      1,
-      2,
-      13,
-      1,
-      "VAE"
     ]
   ],
   "groups": [],
@@ -619,8 +556,8 @@
     "ds": {
       "scale": 0.9090909090909091,
       "offset": [
-        698.5775441954659,
-        83.72513108065357
+        372.53875429229333,
+        84.0657857000266
       ]
     },
     "VHS_latentpreview": false,

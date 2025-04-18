@@ -16,7 +16,7 @@
         126
       ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 4,
       "inputs": [
         {
@@ -70,7 +70,7 @@
         126
       ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -253,60 +253,6 @@
       "bgcolor": "#653"
     },
     {
-      "id": 19,
-      "type": "EmptyLatentImage",
-      "pos": [
-        894.7161254882812,
-        448.6541442871094
-      ],
-      "size": [
-        315,
-        106
-      ],
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "width",
-          "type": "INT",
-          "widget": {
-            "name": "width"
-          },
-          "link": 39
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "widget": {
-            "name": "height"
-          },
-          "link": 40
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            37
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.27",
-        "Node name for S&R": "EmptyLatentImage"
-      },
-      "widgets_values": [
-        1152,
-        896,
-        1
-      ],
-      "color": "#332922",
-      "bgcolor": "#593930"
-    },
-    {
       "id": 8,
       "type": "KSampler",
       "pos": [
@@ -357,7 +303,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        225764729122901,
+        206149853480701,
         "randomize",
         8,
         2,
@@ -380,7 +326,7 @@
         66
       ],
       "flags": {},
-      "order": 4,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -454,49 +400,6 @@
       "bgcolor": "#353"
     },
     {
-      "id": 17,
-      "type": "LoadImage",
-      "pos": [
-        102.28853607177734,
-        658.21435546875
-      ],
-      "size": [
-        315,
-        314
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            34,
-            38
-          ]
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.27",
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "scribble2.png",
-        "image",
-        ""
-      ],
-      "color": "#332922",
-      "bgcolor": "#593930"
-    },
-    {
       "id": 18,
       "type": "ControlNetApplyAdvanced",
       "pos": [
@@ -568,6 +471,58 @@
       "bgcolor": "#353"
     },
     {
+      "id": 19,
+      "type": "EmptyLatentImage",
+      "pos": [
+        894.7161254882812,
+        448.6541442871094
+      ],
+      "size": [
+        315,
+        106
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 39
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 40
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            37
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        1152,
+        896,
+        1
+      ]
+    },
+    {
       "id": 5,
       "type": "CLIPTextEncode",
       "pos": [
@@ -604,7 +559,7 @@
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "outdoors, river, mountain, sky, no person"
+        "outdoors, river, mountain, no person"
       ],
       "color": "#332922",
       "bgcolor": "#593930"
@@ -621,7 +576,7 @@
         98
       ],
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -654,10 +609,53 @@
         "Node name for S&R": "CheckpointLoaderSimple"
       },
       "widgets_values": [
-        "Illustrious-XL-v1.1.safetensors"
+        "fuduki_mix_v20.safetensors"
       ],
       "color": "#232",
       "bgcolor": "#353"
+    },
+    {
+      "id": 17,
+      "type": "LoadImage",
+      "pos": [
+        102.28853607177734,
+        658.21435546875
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            34,
+            38
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "01.png",
+        "image",
+        ""
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
     }
   ],
   "links": [
@@ -834,10 +832,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6209213230591552,
+      "scale": 0.8264462809917354,
       "offset": [
-        780.8589761565731,
-        208.9174948805799
+        303.0312152297934,
+        31.532191950026572
       ]
     },
     "VHS_latentpreview": false,

@@ -1,0 +1,1288 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Apple Silicon, mac, 生成AI, 入門, generative AI, for beginners">
+      
+      
+        <meta name="author" content="asfdrwe">
+      
+      
+        <link rel="canonical" href="https://asfdrwe.github.io/catAITools/video/">
+      
+      
+        <link rel="prev" href="../audio/">
+      
+      
+        <link rel="next" href="../voice/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>動画生成 - Apple Silicon Mac 生成AI活用ガイド</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ai" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Apple Silicon Mac 生成AI活用ガイド" class="md-header__button md-logo" aria-label="Apple Silicon Mac 生成AI活用ガイド" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Apple Silicon Mac 生成AI活用ガイド
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              動画生成
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/asfdrwe/catAITools/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Apple Silicon Mac 生成AI活用ガイド" class="md-nav__button md-logo" aria-label="Apple Silicon Mac 生成AI活用ガイド" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Apple Silicon Mac 生成AI活用ガイド
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/asfdrwe/catAITools/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    はじめに
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prepare/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    事前準備
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    画像生成
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            画像生成
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../image-install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    インストールとモデルのダウンロード
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../image-t2i/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    文章に基づく画像作成
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../image-i2i/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    画像と文章に基づく画像作成
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../image-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    コントロールネットによる生成画像の制御
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../image-edit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AIによる画像加工
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../image-extra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    その他
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    音楽生成
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    動画生成
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    動画生成
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      動画生成AI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      推奨モデルのダウンロード
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hunyuanvideo" class="md-nav__link">
+    <span class="md-ellipsis">
+      HunyuanVideoでの文章に基づく動画生成
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HunyuanVideoでの文章に基づく動画生成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ノード解説
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      日本語でのプロンプト
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hunyuanvideo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      HunyuanVideo での画像に基づく動画生成
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wan21" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wan2.1 での文章に基づく動画生成
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wan2.1 での文章に基づく動画生成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ノードの説明
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wan21_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wan2.1 での画像に基づく動画生成
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wan2.1 での画像に基づく動画生成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      ノードの解説
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wan21_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wan2.1 での開始画像と終了画像に基づく動画生成
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI活用動画加工
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI活用動画加工">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      動画拡大
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      フレーム補間
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      ステレオ動画化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      動画に基づく音声・音楽生成
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../voice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    音声生成
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../language/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    言語AI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../epilogue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    あとがき
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      動画生成AI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      推奨モデルのダウンロード
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hunyuanvideo" class="md-nav__link">
+    <span class="md-ellipsis">
+      HunyuanVideoでの文章に基づく動画生成
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HunyuanVideoでの文章に基づく動画生成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ノード解説
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      日本語でのプロンプト
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hunyuanvideo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      HunyuanVideo での画像に基づく動画生成
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wan21" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wan2.1 での文章に基づく動画生成
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wan2.1 での文章に基づく動画生成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ノードの説明
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wan21_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wan2.1 での画像に基づく動画生成
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wan2.1 での画像に基づく動画生成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      ノードの解説
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wan21_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wan2.1 での開始画像と終了画像に基づく動画生成
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI活用動画加工
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI活用動画加工">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      動画拡大
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      フレーム補間
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      ステレオ動画化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      動画に基づく音声・音楽生成
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>動画生成</h1>
+
+<div><h2 id="ai">動画生成AI</h2>
+<p>動画生成 AI では画像生成 AI と同じ ComfyUI Desktop を利用します。
+まだインストールしていない場合は、<a href="../image-install/">画像生成のインストール</a>
+に従って、ComfyUI Desktop をインストールしてください。</p>
+<h2 id="_1">推奨モデルのダウンロード</h2>
+<p>ComfyUI Desktop を起動している場合は、一旦を終了してください。</p>
+<p>catAITools フォルダの ComfyUI用ツールフォルダに推奨モデルを
+ダウンロードする『VideoModel.download.command』を用意しました。
+これをダブルクリックしてください。</p>
+<p><img alt="download1" src="../img/5001.png"></p>
+<p>ComfyUIフォルダを指定し、</p>
+<p><img alt="download2" src="../img/5002.png"></p>
+<p>はいを押せば、次の推奨モデルがダウンロードされます。
+数十GBあるのでストレージ容量に気をつけてください。</p>
+<p>HunyuanVideo用(7種類)</p>
+<ul>
+<li>hunyuan-video-t2v-720p-Q4_K_M.gguf</li>
+<li>hunyuan-video-i2v-720p-Q4_K_M.gguf</li>
+<li>hyvideo_FastVideo_LoRA-fp8.safetensors</li>
+<li>clip_l.safetensors</li>
+<li>llava_llama3_vision.safetensors</li>
+<li>llava-llama-3-8b-v1_1.Q4_K_M.gguf</li>
+<li>hunyuan_video_vae_bf16.safetensors</li>
+</ul>
+<p>WanVideo用(5種類)</p>
+<ul>
+<li>wan2.1-t2v-14b-Q4_K_M.gguf</li>
+<li>wan2.1-i2v-14b-480p-Q4_K_M.gguf</li>
+<li>umt5-xxl-encoder-Q4_K_M.gguf</li>
+<li>clip_vision_h.safetensors</li>
+<li>wan_2.1_vae.safetensors</li>
+</ul>
+<p>MMAudio用(4種類)</p>
+<ul>
+<li>apple_DFN5B-CLIP-ViT-H-14-384_fp16.safetensors</li>
+<li>mmaudio_large_44k_v2_fp16.safetensors</li>
+<li>mmaudio_synchformer_fp16.safetensors</li>
+<li>mmaudio_vae_44k_fp16.safetensors</li>
+</ul>
+<p><img alt="download3" src="../img/5003.png">
+<img alt="download4" src="../img/5004.png"></p>
+<p>ダウンロード完了するとダイアログが表示されるので、
+OKを押してターミナルを閉じてください。</p>
+<p>ComfyUI Desktop を起動してください。</p>
+<h2 id="hunyuanvideo">HunyuanVideoでの文章に基づく動画生成</h2>
+<p>まず手始めに文章(Text)から動画(Video)を生成していきます。 
+Text to Video(T2V)といいます。</p>
+<p>『3.1.1.HUNYUAN動画生成T2V.json』を開いてください。</p>
+<p><img alt="hunyuan1" src="../img/5005.png"></p>
+<p>ComfyUI-GGUF(GGUF 形式のモデルを扱う) と VideoHelperSuite(動画を扱う) と
+ComfyUI-HunyuanVideoMultiLora (HunyuanVideo 用にカスタマイズされた LoRA ローダ)
+の 3 つのカスタムノードが必要です。</p>
+<p><img alt="hunyuan1" src="../img/5006.png"></p>
+<p>右上の Manager から ComfyUI-Manager を起動し、Install Missing Custom Nodesを押し、</p>
+<p><img alt="hunyuan2" src="../img/5007.png"></p>
+<p>3つともインストールしてください。
+まとめてインストールして Restart して問題ないです。</p>
+<p>HunyuanVideo での動画生成は画像生成と基本的には同じですが、
+プロンプトは基本的には英語の文章で記述します。</p>
+<p><img alt="hunyuan3" src="../img/5008.png"></p>
+<p>ポジティブプロンプトに次の文章を入力して実行するを押してください。</p>
+<pre><code>A fluffy brown cat walking leisurely through the streets of a Japanese city. 
+The background features shops. Bright daylight streams in, 
+The camera follows the cat from a slightly low angle, 
+capturing its natural movements.
+</code></pre>
+<p>20分程度で猫が街中を歩いているリアル調の1秒程度の動画が生成されたと思います。</p>
+<p><img alt="hunyuan4" src="../img/5009.png"></p>
+<p></p><div class="video-container"><iframe src="../generated/Hunyuan1.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div>
+<h3 id="_2">ノード解説</h3>
+<ul>
+<li>ポジティブプロンプト</li>
+</ul>
+<p>生成する動画への指示を英文で書いてください。HunyuanVideo では
+ネガティブプロンプトはないので表現したい要素をポジティブプロンプトに書いてください。</p>
+<ul>
+<li>EmptyHunyuanLatentVideo</li>
+</ul>
+<p>動画の幅や高さやフレーム数(HunyuanVideo では1秒間24フレームなので25フレームで
+1秒強)を指定してください。秒数を増やせば生成時間はかなり増えます。</p>
+<ul>
+<li>基本スケジューラー</li>
+</ul>
+<p>ステップ数を増やすと画質が向上しますが時間がかかります。
+高速化 LoRA の仕様では 6 ステップで可能となっていますが、
+6 ステップではいまいちな気がしたので、8ステップにしています。</p>
+<ul>
+<li>フラックスガイダンス</li>
+</ul>
+<p>プロンプトが動画に与える影響度です。増やすとプロンプトの内容に
+より近づきますが破綻しやすくなります。</p>
+<ul>
+<li>モデルサンプリングSD3</li>
+<li>VAEデコード（タイル）</li>
+</ul>
+<p>変更すると動画の動き具合は変わるはずですが、通常変更する必要はありません。</p>
+<ul>
+<li>Video Combine VHS</li>
+</ul>
+<p>format で h264 や h265 など動画のコーディックの変更が可能です。
+h264-mp4 の場合 crf が動画の品質です。loop_count を増やすと
+その回数分ループする動画が生成されます。</p>
+<ul>
+<li>Unet Loader(GGUF)</li>
+<li>DualCLIPLoader(GGUF)</li>
+<li>VAEを読み込む</li>
+</ul>
+<p>GGUF 形式のモデルを使用しています。GGUF 形式はモデルを量子化したものです。
+JPEG画像やMPEG動画のように、モデルの精度が落ちる代わりにモデルサイズを
+縮小する非可逆圧縮を行ったものと捉えてよいです（正確には違いますが）。 
+16GB のメモリでも動作するよう GGUF 形式の Q4_K_M という量子化モデルを使用しています。</p>
+<ul>
+<li>Hunyuan Video Lora Loader</li>
+</ul>
+<p>高速化 LoRA を読み込みます。通常は変更する必要はありません。</p>
+<ul>
+<li>追加 LoRA</li>
+</ul>
+<p>LoRA を使用したい場合は有効にして使いたい LoRA を指定してください。
+blocks_type は double_blocks にしないと複数 LoRA を重ねたときに品質が低下
+しやすくなります。</p>
+<h3 id="_3">日本語でのプロンプト</h3>
+<p><a href="https://translate.google.com/?sl=auto&amp;tl=ja&amp;op=translate">Google 翻訳</a>や
+<a href="https://www.deepl.com/ja/translator">DeepL</a>などで日本語文章を翻訳するか、
+後述する<a href="../language/">言語 AI</a> に英文プロンプトを作成してもらうのがよいと思います。</p>
+<h2 id="hunyuanvideo_1">HunyuanVideo での画像に基づく動画生成</h2>
+<p>画像を元に画像を生成する I2I と同様に、動画の一番最初となる画像を与えて、
+その画像(Image)に対する動画(Video)を生成する Image to Video(I2V) も可能です。</p>
+<p>『3.1.2.HUNYUAN動画生成I2V.json』を開いてください。</p>
+<p><img alt="hunyuan5" src="../img/5010.png"></p>
+<p>『1.1.1.画像生成基本T2I.json』で生成した猫画像を『画像を読み込む』ノードで選択してください。</p>
+<p>ポジティブプロンプトに次の文章を入力して実行するを押してください。</p>
+<pre><code>A cat walking leisurely through in bedroom. 
+The background features bed. Bright daylight streams in, 
+The camera follows the cat from a slightly low angle, 
+capturing its natural movements.
+</code></pre>
+<p>元絵からだいぶ離れている気がしますが猫が寝室を動いている動画が生成されます。</p>
+<p></p><div class="video-container"><iframe src="../generated/Hunyuan2.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div>
+<p>基本的には T2V で動画を作成するより、画像を生成した上で I2V で動画にする方が
+求める動画を作りやすいと思います。</p>
+<h2 id="wan21">Wan2.1 での文章に基づく動画生成</h2>
+<p>Wan2.1 による T2V 動画生成を行います。HunyuanVideo より高品質ですが、
+M4 Mac mini の GPU や 16GB のメモリでは性能的に厳しいので、
+240x320 の小サイズの 1 秒程度の動画を生成します。 </p>
+<p>『3.2.1.Wan動画生成T2V.json』を開いてください。</p>
+<p><img alt="Wan1" src="../img/5011.png"></p>
+<p>次のプロンプトをポジティブプロンプトに入れて実行するを押してください。</p>
+<pre><code>This is a high quality anime style movie of a girl talking in classroom.
+She is talking to the camera and smiling.
+</code></pre>
+<p>15 分程度で少女がこちらに話しかけてるアニメ調の 1 秒の動画が生成されるはずです。</p>
+<p></p><div class="video-container"><iframe src="../generated/Wan1.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div>
+<h3 id="_4">ノードの説明</h3>
+<ul>
+<li>ポジティブプロンプト</li>
+<li>ネガティブプロンプト</li>
+</ul>
+<p>画像生成と同様に動画に対する指示をポジティブプロンプトに書き、動画に
+含めたくないものをネガティブプロンプトに書いてください。</p>
+<ul>
+<li>EmptyHunyuanLatentVideo</li>
+</ul>
+<p>幅や高さや長さを指定します。Wan2.1 は 1 秒間に 16 フレーム(16fps)なので、
+17 フレームで 1 秒強の動画になります。</p>
+<ul>
+<li>Kサンプラー</li>
+</ul>
+<p>T2V ではステップ数を 10 にしています。本来は 20〜30 必要なのですが、
+生成速度を上げるために少ないステップ数にしています。</p>
+<h2 id="wan21_1">Wan2.1 での画像に基づく動画生成</h2>
+<p>画像を与えてその画像に対する動画を生成します。</p>
+<p>『3.2.2.Wan動画生成I2V.json』を開いてください。</p>
+<p><img alt="Wan2" src="../img/5012.png"></p>
+<p>画像生成で生成した少女の画像を『画像を読み込み』で選択し、
+次のプロンプトをポジティブプロンプトに入れて実行するを押してください。</p>
+<pre><code>This is a high quality anime style movie of a girl talking in classroom.
+She is talking to the camera and smiling.
+</code></pre>
+<p>I2V では同じステップ数でも 2 倍以上時間がかかる上に
+品質の問題からステップ数を 20 にしているので、60 分程度かかります。</p>
+<p>元画像に基づくこちらに話しかけてるアニメ調の 1 秒の動画が生成されるはずです。</p>
+<p></p><div class="video-container"><iframe src="../generated/Wan2.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div>
+<h3 id="_5">ノードの解説</h3>
+<ul>
+<li>CLIPビジョンエンコード</li>
+</ul>
+<p>画像と動画の縦横比率がが違う場合にどう切り抜くかの指定ができます。
+none なら何もしません。center にすると画像の中心部分を切り抜いて
+動画の比率に合わせます。</p>
+<h2 id="wan21_2">Wan2.1 での開始画像と終了画像に基づく動画生成</h2>
+<p>開始画像だけでなく終了画像も与えることでより求める動画を生成しやすくなります。</p>
+<p>ComfyUI-WanStartEndFramesNativeと いうカスタムノードを使用します。</p>
+<p>ただ、このノードでは幅や高さが 320 未満のものを生成できないので、
+240x320 の動画が生成できるようパッチを当てながらインストールします。</p>
+<p>一旦 ComfyUI Destkop を終了し、catAITools フォルダの ComfyUI 用ツールフォルダの
+『ComfyUI-WanStartEndFramesNative.install.command』をダブルクリックしてください。</p>
+<p>ComfyUI フォルダを選択してインストールしてください。</p>
+<p>ComfyUI Desktop を起動し、『3.2.3.Wan動画生成開始終了画像指定I2V.json』を開いてください。</p>
+<p><img alt="Wan3" src="../img/5013.png"></p>
+<p>画像生成で生成した少女の画像を『開始画像を読み込み』で選択し、
+同じ画像を『終了画像を読み込み』でも選択します。
+こうすることでループする動画を容易に作成できます。</p>
+<p>この場合、開始画像と終了画像が同じなので、終了画像は
+動画から取り除きます。『Wan Skip End Frame Images』ノード で
+skip_end_frames を 1 にすることでその処理を行います。</p>
+<p>『Video Combine VHS』ノードの loop_count を 5 にすることで
+1 秒の動画を 5 回繰り返して 5 秒の動画を作成します。</p>
+<p>次のプロンプトをポジティブプロンプトに入れて実行するを押してください。</p>
+<pre><code>This is a high quality anime style movie of a girl talking in classroom.
+She is talking to the camera and smiling.
+</code></pre>
+<p></p><div class="video-container"><iframe src="../generated/Wan3.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div>
+<h2 id="ai_1">AI活用動画加工</h2>
+<h3 id="_6">動画拡大</h3>
+<p>『1.4.1.画像2倍拡大.json』と同様の手法で動画を2倍に拡大します。</p>
+<p>1.4.1.画像2倍拡大.json』で『ComfyUI.ESRGAN.fix.command』を実行して
+ ComfyUI Desktop のコードを修正している場合はそのまま動きます。
+修正していない場合は実行してください</p>
+<p>『3.3.1.動画2倍拡大.json』を開いてください。</p>
+<p><img alt="scale1" src="../img/5015.png"></p>
+<p>生成した猫の動画(480x640 24fps)を『Load Video(Upload)』ノードの choose video to upload
+からアップロードしてください。</p>
+<p><img alt="scale2" src="../img/5016.png"></p>
+<p>実行するを押すと 480x640 の動画を 2 倍の 960x1280 の動画に拡大できました。</p>
+<p></p><div class="video-container"><iframe src="../generated/Video1.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div>
+<p>『3.3.2.動画4倍拡大.json』を開いてください。こちらでは lanczos アルゴリズムで
+半分にすることを行わないので、そのまま 4 倍に拡大されます。</p>
+<p><img alt="scale3" src="../img/5017.png"></p>
+<p>同様に生成した少女の動画(240x320 16fps)を『Load Video(Upload)』ノードの 
+choose video to upload からアップロードしてください。</p>
+<p>240x320 の動画を 4 倍の 960x1280 の動画に拡大できました。</p>
+<p></p><div class="video-container"><iframe src="../generated/Video2.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div>
+<h3 id="_7">フレーム補間</h3>
+<p>HunyuanVideo の生成動画はフィルム映画と同じ 1 秒間に 24 フレーム(24fps)ですが、
+ディスプレイは 60fps や 120fps なのでカクついて見える場合があります。</p>
+<p>AI を利用してフレーム補間することでより滑らかな動画にできます。</p>
+<p>『3.3.3.動画フレーム補間.json』を開いてください。</p>
+<p><img alt="interpolation1" src="../img/5018.png"></p>
+<p>ComfyUI-Frame-Interpolation カスタムノードが必要です。
+右上の Manager から ComfyUI-Manager を起動して
+Install Missing Custom Nodes からインストールして、
+Restart を押して ComfyUI Desktop を再起動してください。</p>
+<p>必要なモデルは自動的にダウンロードされます。</p>
+<p><img alt="interpolation2" src="../img/5019.png"></p>
+<p>Load Video の choose Video to upload から先ほど拡大した HunyuanVideo 猫動画(24fps)をアップロードしてください。</p>
+<p>『RIFE VFI』ノードの multiplier を 3、『Video Combine VHS』の 
+frame_rate を 72 にして実行するを押してください。</p>
+<p>3 倍の 72 fpsに補間されました。より滑らかになったはずです。</p>
+<p></p><div class="video-container"><iframe src="../generated/Video3.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div>
+<p>Load Video の choose Video to upload からWan少女動画(16fps)をアップロードしてください。</p>
+<p><img alt="interpolation2" src="../img/5020.png"></p>
+<p>RIFE VFI ノードの multiplierを4、Video Combine VHSのframe_rateを64にして実行するを押してください。</p>
+<p>4倍の64fpsに補間しています。より滑らかになったはずです。</p>
+<p></p><div class="video-container"><iframe src="../generated/Video4.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div>
+<h3 id="_8">ステレオ動画化</h3>
+<p>VR向けにステレオ動画化します。</p>
+<p>3.3.4.動画ステレオ化.jsonを開いてください。画像のステレオ化と同じカスタムノードが必要です。</p>
+<p><img alt="stereo1" src="../img/5022.png"></p>
+<p>『Load Video』 の choose Video to upload から先ほどフレーム補間した猫動画をアップロードして実行するをおしてください。</p>
+<p>平行法用LR形式のステレオ動画が生成されます。
+VRビューア等で見てください。</p>
+<p></p><div class="video-container"><iframe src="../generated/Video5.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div>
+<h3 id="_9">動画に基づく音声・音楽生成</h3>
+<p>動画にあった内容の音声や音楽を自動的につけるAIがあります。</p>
+<p>ComfyUI-MMAudio というカスタムノードを使用します。</p>
+<p>ただ、カスタムノードの評価がされていない関係で、
+ComfyUI-Manager ではそのままではセキュリティ上インストールできない上に、
+他でも容易に動かせるにも関わらず NVIDIA の CUDA 専用になっているので、
+macOS でも動作するよう修正しながらインストールするスクリプトを用意しました。</p>
+<p>ComfyUI Destkop を一旦終了してください。</p>
+<p>『ComfyUI用ツール』フォルダの『ComfyUI-MMAudio.install.command』 をダブルクリックしてください。</p>
+<p><img alt="MMAudio1" src="../img/5022.png"></p>
+<p>ComfyUI のフォルダを選択すれば、ComfyUI-MMAudio のダウンロードと
+コード修正が行われます。</p>
+<p>ComfyUI Desktop を起動し、
+『3.3.5.動画の内容に対応する音声・音楽をつける.json』を開いてください。</p>
+<p><img alt="MMAudio2" src="../img/5023.png"></p>
+<p>今までの動画はほとんど 1 秒だったので、10 回ループさせた 10 秒の
+動画を用意しましょう。</p>
+<p>一旦 『3.3.2.動画フレーム補間.json』ワークフローに戻り
+『Video Combine VHS』ノードの loop_count を 10 に
+してもう一度動画を生成してください。</p>
+<p>生成できたら
+『3.3.5.動画の内容に対応する音声・音楽をつける.json』のワークフローに
+戻り、choose video to upload でアップロードしてください。</p>
+<p>『MMAudio Sampler』ノードに次のプロンプトを入力して実行するを
+押してください。</p>
+<pre><code>A cat is walking in street with pop background music.
+</code></pre>
+<p>歩いている猫にあったBGMが生成されるはずです。
+右上のオーディオプレビューで生成音声が確認できます。</p>
+<p>動画と音声を統合した動画はoutputフォルダから開いて
+動画プレイヤーで再生してください。</p>
+<p></p><div class="video-container"><iframe src="../generated/Video6.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright (c) 2025 asfdrwe, CC BY 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -12,14 +12,17 @@ if [ ! -d .venv/ ]; then
 fi
 
 . .venv/bin/activate
+hash -r 
 
 cd custom_nodes
 git clone https://github.com/1038lab/ComfyUI-RMBG
+
 cd ComfyUI-RMBG 
 
-patch -p0 <<EOF
---- requirements.txt.orig       2025-04-09 17:28:28
-+++ requirements.txt    2025-04-09 17:28:35
+patch -p1 <<EOF
+diff -uNr ComfyUI-RMBG.orig/requirements.txt ComfyUI-RMBG/requirements.txt
+--- ComfyUI-RMBG.orig/requirements.txt	2025-04-11 23:05:30
++++ ComfyUI-RMBG/requirements.txt	2025-04-11 23:05:45
 @@ -13,4 +13,3 @@
  opencv-python>=4.7.0
  scipy>=1.10.0
@@ -28,6 +31,7 @@ patch -p0 <<EOF
 \ No newline at end of file
 EOF
 
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 
 osascript -e 'display dialog "インストールが完了しました。" with title "完了通知" with text buttons {"OK"} with icon 1'
+
