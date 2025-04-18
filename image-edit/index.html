@@ -1,0 +1,836 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Apple Silicon, mac, 生成AI, 入門, generative AI, for beginners">
+      
+      
+        <meta name="author" content="asfdrwe">
+      
+      
+      
+        <link rel="prev" href="../image-control/">
+      
+      
+        <link rel="next" href="../image-extra/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>AIによる画像加工 - Apple Silicon Mac 生成AI活用ガイド</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Apple Silicon Mac 生成AI活用ガイド" class="md-header__button md-logo" aria-label="Apple Silicon Mac 生成AI活用ガイド" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Apple Silicon Mac 生成AI活用ガイド
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              AIによる画像加工
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Apple Silicon Mac 生成AI活用ガイド" class="md-nav__button md-logo" aria-label="Apple Silicon Mac 生成AI活用ガイド" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Apple Silicon Mac 生成AI活用ガイド
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    はじめに
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prepare/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    事前準備
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    画像生成
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            画像生成
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../image-install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    インストールとモデルのダウンロード
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../image-t2i/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    文章に基づく画像作成
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../image-i2i/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    画像と文章に基づく画像作成
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../image-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    コントロールネットによる生成画像の制御
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    AIによる画像加工
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    AIによる画像加工
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      画像拡大
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="画像拡大">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#esrgan" class="md-nav__link">
+    <span class="md-ellipsis">
+      ESRGANコードの修正
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      画像拡大の実行
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      背景削除
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      背景合成
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      ステレオ画像生成
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../image-extra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    その他
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    音楽生成
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    動画生成
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../voice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    音声生成
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../language/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    言語AI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../epilogue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    あとがき
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      画像拡大
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="画像拡大">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#esrgan" class="md-nav__link">
+    <span class="md-ellipsis">
+      ESRGANコードの修正
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      画像拡大の実行
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      背景削除
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      背景合成
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      ステレオ画像生成
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>AIによる画像加工</h1>
+
+<div><h3 id="_1">画像拡大</h3>
+<h4 id="esrgan">ESRGANコードの修正</h4>
+<p>画像の拡大に ESRGAN というAI技術を使います。</p>
+<p>ただ、ComfyUI Desktop がインストールする PyTorch 関連にはバグがあり
+macOS では ESRGAN 関連が正常に
+動作しません。修正するユーティリティを用意しました。</p>
+<p>一旦 ComfyUI Desktop を閉じてください。</p>
+<p>catAIToolsフォルダのComfyUI用ツールフォルダを開いてください。</p>
+<p><img alt="edit1" src="../img/3501.png"></p>
+<p>中にある『ComfyUI.ESRGAN.fix.command』をダブルクリックしてください。</p>
+<p><img alt="edit2" src="../img/3502.png"></p>
+<p>ComfyUI のインストールフォルダを選び、『選択』を押せばコード修正が
+適用されます。ツールによって開かれたターミナルは閉じてください。</p>
+<p>もう一度 ComfyUI を起動してください。</p>
+<h4 id="_2">画像拡大の実行</h4>
+<p>『1.4.1.画像2倍拡大.json』を開いてください。</p>
+<p><img alt="edit3" src="../img/3503.png"></p>
+<p>『画像を読み込む』ノードで拡大する画像を選んでください。</p>
+<p>一旦 ESRGAN技術で 4 倍にしてから lanczos アルゴリズムで半分に縮小することで、
+細部への描写を反映させつつ2倍に拡大できます。</p>
+<p><img alt="gen0012" src="../generated/0012.png"></p>
+<h3 id="_3">背景削除</h3>
+<p>AIが背景を認識して背景を削除しその部分を透過にしたり
+クロマキー用緑や青にできます。</p>
+<p>RMBG カスタムノードが必要です。が、カスタムノードの requirements.txt が
+macOS を考慮していないのでそのままではインストールできません。</p>
+<p>インストールできるよう修正してインストールするスクリプトを用意したので、
+ComfyUI Desktop を一旦終了させください。</p>
+<p><img alt="edit4" src="../img/3504.png"></p>
+<p>catAITools フォルダのの ComfyUI用ツール フォルダの
+『ComfyUI-RMBG.install.command』をダブルクリックしてください。</p>
+<p>ComfyUI のインストールフォルダを選び、選択を押せばコード修正が
+適用されます。ターミナルは閉じてください。</p>
+<p>もう一度 ComfyUI を起動してください。</p>
+<p>『1.4.3.画像背景除去.json』を開いてください。</p>
+<p><img alt="edit5" src="../img/3505.png"></p>
+<p>『画像を読み込む』ノードで画像を選択してください。</p>
+<p>実行するを押せば、モデルが自動的にダウンロードされ、
+背景を自動で削除して透過にしたものとグリーンバックにしたものが
+生成されるはずです。</p>
+<p>『背景を削除（RMBG)』ノードのモデルには BEN、BEN2、INSPYRENET、RMGB-2.0 の
+4 種類とあり、どれが一番うまくいくかはやってみたいとわからないので、
+いまいちの場合は別なモデルで試してみてください。</p>
+<ul>
+<li>BEN 背景切り抜きミスがある上に足の一部が切り抜かれれています。</li>
+</ul>
+<p><img alt="gen0013" src="../generated/0013.png"></p>
+<ul>
+<li>BEN2 背景切り抜きミスがあります。</li>
+</ul>
+<p><img alt="gen0014" src="../generated/0014.png"></p>
+<ul>
+<li>INSPYRENET ごくわずかに背景切り抜きミスがあります。</li>
+</ul>
+<p><img alt="gen0015" src="../generated/0015.png"></p>
+<ul>
+<li>RMBG-2.0 問題ないようです。</li>
+</ul>
+<p><img alt="gen0016" src="../generated/0016.png"></p>
+<p>『LayerUtility:ImageRemoveAlpha』ノードの background_color で
+背景色を変えられます。'#00FF00' の場合グリーンバックに、
+'#0000FF' の場合ブルーバックになります。</p>
+<h3 id="_4">背景合成</h3>
+<p>さらに削除した背景部分に別な背景を差し込むこともできます。</p>
+<p>『1.4.5.画像背景合成.json』を開いてください。</p>
+<p><img alt="edit6" src="../img/3507.png"></p>
+<p>『画像を読み込む』ノードで背景を削除して前景にする画像を読み込み、
+『背景画像を読み込む』ノードで背景とする画像を読み込んでください。
+『背景を削除（RMBG)』ノードのモデルを RMBG-2.0 にしてください。
+前景画像を背景画像の中央に配置するために『画像コンビネーション（RMBG)』
+ノードの位置Xと位置Yは 50 にしてください。</p>
+<p>実行するを押せば前景画像の背景が削除され背景画像が埋め込まれるはずです。</p>
+<p><img alt="gen0017" src="../generated/0017.png"></p>
+<h3 id="_5">ステレオ画像生成</h3>
+<p>『1.4.7.ステレオ画像化.json』を開いてください。</p>
+<p>StereoImageNode カスタムノードが必要なので、ComfyUI-Manager で
+インストールして、ComfyUI Desktop を再起動してください。</p>
+<p><img alt="edit7" src="../img/3508.png"></p>
+<p>実行するを押すと深度情報に基づき LR 形式のステレオ画像が生成されます。</p>
+<p><img alt="gen0018" src="../generated/0018.png"></p>
+<p>VR ビューアで見れば立体視できるはずです。</p>
+<p>『Stereo Image Node』ノード の modes を right-left にすれば
+RL 形式（交差法用)の画像を生成することもできます。
+交差法での立体視は慣れれば裸眼で可能なのでお試しください
+(参考: <a href="https://www.stereoeye.jp/howto/cross.html">交差法での立体視の解説</a>)。</p>
+<p><img alt="gen0019" src="../generated/0019.png"></p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright (c) 2025 asfdrwe, CC BY 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
