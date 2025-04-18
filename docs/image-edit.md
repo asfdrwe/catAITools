@@ -116,7 +116,8 @@ StereoImageNode カスタムノードが必要なので、ComfyUI-Manager で
 
 ![edit7](img/3508.png)
 
-実行するを押すと深度情報に基づき LR 形式のステレオ画像が生成されます。
+『Stereo Image Node』ノード の modes を left-right にして実行するを押すと
+深度情報に基づき LR 形式のステレオ画像が生成されます。
 
 ![gen0018](generated/0018.png)
 
