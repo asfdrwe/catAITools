@@ -10,7 +10,7 @@ Finder でダウンロードを開いてください。
 
 ![install1](img/3003.png)
 
-『ComfyUI 0.4.34 - arm64.dmg』(バージョンは異なる場合があります)をダブルクリックしてください。
+『ComfyUI 0.4.32 - arm64.dmg』(バージョンは異なる場合があります)をダブルクリックしてください。
 
 ![install2](img/3004.png)
 
@@ -18,9 +18,9 @@ ComfyUI のアイコンを Applications にドラッグしてインストール�
 
 ![install3](img/3005.png)
 
-デスクトップの『ComfyUI 0.4.34 - arm64.dmg』 を右クリックして
-"ComfyUI 0.4.34-arm64" を取り出すを押してディスクを取り外し、
-ダウンロードフォルダの『ComfyUI 0.4.34 - arm64.dmg』は
+デスクトップの『ComfyUI 0.4.32 - arm64.dmg』 を右クリックして
+"ComfyUI 0.4.32-arm64" を取り出すを押してディスクを取り外し、
+ダウンロードフォルダの『ComfyUI 0.4.32 - arm64.dmg』は
 ゴミ箱にいれて削除してください。
 
 ![install4](img/3006.png)
