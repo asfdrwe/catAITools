@@ -292,7 +292,7 @@ llama.cpp の llama_server を利用すると特定のモデルでは思考プ�
 が対応しているので、実際に試してみましょう。
 
 ### llama.cpp のインストール
-llama.cpp フォルダの『llama.cpp.command』をダブルクリックしてください。
+extra フォルダの llama.cpp フォルダの『llama.cpp.command』をダブルクリックしてください。
 
 しばらくするとモデルを選択する画面が出ます。
 
