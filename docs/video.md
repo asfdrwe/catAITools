@@ -290,16 +290,25 @@ She is talking to the camera and smiling.
 ## Wan2.1 1.3B InPでの開始画像と終了画像に基づく動画生成(2025/5/7追加)
 少ないメモリで高速に動画生成できるWan2.1 1.3B InPモデルを使って動画生成します。
 
-一旦 ComfyUI Destkop を終了し、catAITools フォルダの ComfyUI 用ツールフォルダの
-catAITools フォルダの ComfyUI用ツールフォルダの『WanInP.Model.download.command』を
-ダブルクリックしてください。
+一旦 ComfyUI Desktop を終了してください。
 
-ComfyUIフォルダを指定し、はいを押せば、次のモデルがダウンロードされます。
+- [diffusion_pytorch_model.safetensors](https://huggingface.co/alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP/resolve/main/diffusion_pytorch_model.safetensors?download=true)
 
-  - wan2.1-1.3b-InP.safetensors
-  - Wan2.1_VAE.pth
+上をクリックすると自動的にダウンロードします。
 
-ComfyUI Desktop を起動し、『3.2.4.WanInP動画生成開始終了画像指定I2V.json』を開いてください。
+FinderでComfyUIフォルダのmodelsフォルダのdiffusion_modelsフォルダに移動させ、右クリックして『wan2.1-1.3b-InP.safetensors』という名前に変更してください。
+
+- [Wan2.1_VAE.pth](https://huggingface.co/alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP/resolve/main/Wan2.1_VAE.pth?download=true)
+
+上をクリックするとダウンロードします。
+
+FinderでComfyUIフォルダのmodelsフォルダのvaeフォルダに移動させ、右クリックして『wan.inp_vae.pth』という名前に変更してください(名前は変えずにワークフローの方でdiffusion_pytorch_model.safetensorsやWan2.1_VAE.pthを指定してもOKです）。
+
+- [『3.2.4.WanInP動画生成開始終了画像指定I2V.json』](https://raw.githubusercontent.com/asfdrwe/catAITools/refs/heads/main/workflows/3.2.4.WanInP%E5%8B%95%E7%94%BB%E7%94%9F%E6%88%90%E9%96%8B%E5%A7%8B%E7%B5%82%E4%BA%86%E7%94%BB%E5%83%8F%E6%8C%87%E5%AE%9AI2V.json)
+
+上を右クリックして名前をつけて保存を選びダウンロードしてください。
+
+ComfyUIを起動し『3.2.4.WanInP動画生成開始終了画像指定I2V.json』ワークフローを開いてください。
 
 ![Wan3](img/50131.png)
 
@@ -393,7 +402,7 @@ RIFE VFI ノードの multiplierを4、Video Combine VHSのframe_rateを64にし
 ### ステレオ動画化
 VR向けにステレオ動画化します。
 
-3.3.4.動画ステレオ化.jsonを開いてください。画像のステレオ化と同じカスタムノードが必要です。
+『3.3.4.動画ステレオ化.json』を開いてください。画像のステレオ化と同じカスタムノードが必要です。
 
 ![stereo1](img/5022.png)
 
