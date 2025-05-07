@@ -287,6 +287,35 @@ She is talking to the camera and smiling.
 
 ![type:video](generated/Wan3.mp4)
 
+## Wan2.1 1.3B InPでの開始画像と終了画像に基づく動画生成(2025/5/7追加)
+少ないメモリで高速に動画生成できるWan2.1 1.3B InPモデルを使って動画生成します。
+
+一旦 ComfyUI Destkop を終了し、catAITools フォルダの ComfyUI 用ツールフォルダの
+catAITools フォルダの ComfyUI用ツールフォルダの『WanInP.Model.download.command』を
+ダブルクリックしてください。
+
+ComfyUIフォルダを指定し、はいを押せば、次のモデルがダウンロードされます。
+
+  - wan2.1-1.3b-InP.safetensors
+  - Wan2.1_VAE.pth
+
+ComfyUI Desktop を起動し、『3.2.4.WanInP動画生成開始終了画像指定I2V.json』を開いてください。
+
+![Wan3](img/50131.png)
+
+画像生成で生成した少女の画像を『開始画像を読み込み』で選択し、同じ画像を『終了画像を読み込み』でも選択します。
+(上の画像では間違って終了画像が無効になっていますが無効にせず生成してください。無効にした方が動きは強くなります)。
+
+次のプロンプトをポジティブプロンプトに入れて実行するを押してください。
+
+```
+This is a high quality anime style movie of a girl talking in classroom.
+```
+
+5分程度で動画が生成されるはずです。あまり品質はよくないですが、非常に高速に動画が生成できます。
+
+![type:video](generated/Wan4.mp4)
+
 ## AI活用動画加工
 
 ### 動画拡大
