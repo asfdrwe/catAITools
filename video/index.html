@@ -594,6 +594,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#wan21-13b-inp202557" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wan2.1 1.3B InPでの開始画像と終了画像に基づく動画生成(2025/5/7追加)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ai_1" class="md-nav__link">
     <span class="md-ellipsis">
       AI活用動画加工
@@ -854,6 +863,15 @@
   <a href="#wan21_2" class="md-nav__link">
     <span class="md-ellipsis">
       Wan2.1 での開始画像と終了画像に基づく動画生成
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wan21-13b-inp202557" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wan2.1 1.3B InPでの開始画像と終了画像に基づく動画生成(2025/5/7追加)
     </span>
   </a>
   
@@ -1144,6 +1162,25 @@ skip_end_frames を 1 にすることでその処理を行います。</p>
 She is talking to the camera and smiling.
 </code></pre>
 <p></p><div class="video-container"><iframe src="../generated/Wan3.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div>
+<h2 id="wan21-13b-inp202557">Wan2.1 1.3B InPでの開始画像と終了画像に基づく動画生成(2025/5/7追加)</h2>
+<p>少ないメモリで高速に動画生成できるWan2.1 1.3B InPモデルを使って動画生成します。</p>
+<p>一旦 ComfyUI Destkop を終了し、catAITools フォルダの ComfyUI 用ツールフォルダの
+catAITools フォルダの ComfyUI用ツールフォルダの『WanInP.Model.download.command』を
+ダブルクリックしてください。</p>
+<p>ComfyUIフォルダを指定し、はいを押せば、次のモデルがダウンロードされます。</p>
+<ul>
+<li>wan2.1-1.3b-InP.safetensors</li>
+<li>Wan2.1_VAE.pth</li>
+</ul>
+<p>ComfyUI Desktop を起動し、『3.2.4.WanInP動画生成開始終了画像指定I2V.json』を開いてください。</p>
+<p><img alt="Wan3" src="../img/50131.png"></p>
+<p>画像生成で生成した少女の画像を『開始画像を読み込み』で選択し、同じ画像を『終了画像を読み込み』でも選択します。
+(上の画像では間違って終了画像が無効になっていますが無効にせず生成してください。無効にした方が動きは強くなります)。</p>
+<p>次のプロンプトをポジティブプロンプトに入れて実行するを押してください。</p>
+<pre><code>This is a high quality anime style movie of a girl talking in classroom.
+</code></pre>
+<p>5分程度で動画が生成されるはずです。あまり品質はよくないですが、非常に高速に動画が生成できます。</p>
+<p></p><div class="video-container"><iframe src="../generated/Wan4.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div>
 <h2 id="ai_1">AI活用動画加工</h2>
 <h3 id="_6">動画拡大</h3>
 <p>『1.4.1.画像2倍拡大.json』と同様の手法で動画を2倍に拡大します。</p>
